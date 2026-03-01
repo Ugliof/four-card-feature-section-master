@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/* IMPORT FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* RESET GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COLORS / FONT */
+
+:root {
+
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+--Grey500: hsl(234, 12%, 34%);
+--Grey400: hsl(212, 6%, 44%);
+--White: hsl(0, 0%, 100%);
+
+/* FONT FAMILY */
+
+--font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    background-color: hsl(204, 7%, 86%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 25px;
+
+    font-family: var(--font-family);
+}
+
+.cabecalho {
+    text-align: center;
+    max-width: 40%;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+p.descricao-header {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.card-supervisor {
+    border-top: 3px solid var(--Cyan);
+}
+.card-team-builder {
+    border-top: 3px solid var(--Red);
+    margin-bottom: 1.5rem;
+}
+.card-karma {
+    border-top: 3px solid var(--Orange);
+}
+.card-calculator {
+    border-top: 3px solid var(--Blue);
+}
+
+.card-supervisor,
+.card-team-builder,
+.card-karma,
+.card-calculator {
+    background-color: var(--White);
+    
+    padding: 1.5rem;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.411);
+    width: 80%;
+}
+
+.section-supervisor,
+.section-calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-cards {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.img-icons {
+    text-align: end;
+}
+

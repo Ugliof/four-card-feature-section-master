@@ -1,45 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Four card feature section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   
-  Reliable, efficient delivery
-  Powered by Technology
+  <header class="cabecalho">
+    <h1 class="titulo">
+      Reliable, efficient delivery
+    </h1>
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+    <h2 class="subtitulo">
+      Powered by Technology
+    </h2>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+    <p class="descricao-header">
+      Our Artificial Intelligence powered tools use millions of project data points
+      to ensure that your project is successful
     </p>
-  </footer>
+    
+  </header>
+
+  <main class="container">
+
+    <!-- CARD SUPERVISOR -->
+    <section class="section-supervisor">
+      <article class="card-supervisor">
+        <h3>
+          Supervisor
+        </h3>
+
+        <p class="descricao-supe
+        rvisor">
+        Monitors activity to identify project roadblocks
+        </p>
+
+        <div class="img-icons">
+          <img src="images/icon-supervisor.svg" alt="icon-supervisor">
+        </div>
+      </article>
+    </section>
+
+    <!-- GROUP CARDS -->
+    <section class="group-cards">
+
+      <!-- CARD TEAM BUILDER -->
+      <article class="card-team-builder">
+        <h3>
+          Team Builder
+        </h3>
+
+        <p class="descricao-team-builder">
+          Scans our talent network to create the optimal team for your project
+        </p>
+
+        <div class="img-icons">
+          <img src="images/icon-team-builder.svg" alt="icon-team-builder">
+        </div>
+      </article>
+
+      <!-- CARD KARMA -->
+      <article class="card-karma">
+        <h3>
+          Karma
+        </h3>
+
+        <p class="descricao-karma">
+          Regularly evaluates our talent to ensure quality
+        </p>
+
+        <div class="img-icons">
+          <img src="images/icon-karma.svg" alt="icon-karma">
+        </div>
+      </article>
+    </section>
+    
+    <!-- CARD CALCULATOR -->
+    <section class="section-calculator">
+      <article class="card-calculator">
+        <h3>
+          Calculator
+        </h3>
+
+        <p class="descricao-calculator">
+          Uses data from past projects to provide better delivery estimates
+        </p>
+
+        <div class="img-icons">
+          <img src="images/icon-calculator.svg" alt="icon-calculator">
+        </div>
+      </article>
+    </section>
+  </main>
+
 </body>
 </html>
