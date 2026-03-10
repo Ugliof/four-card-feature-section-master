@@ -39,8 +39,10 @@ body {
     justify-content: center;
     align-items: center;
 
+    min-height: 100vh;
     padding: 2.5rem 0;
     gap: 25px;
+    overflow-x: hidden;
 
     font-family: var(--font-family);
 }
@@ -49,45 +51,49 @@ body {
 
 .cabecalho {
     text-align: center;
-    max-width: 40%;
+    max-width: 500px;
+    width: 100%;
 }
 
 /* TITULO ( Reliable, efficient delivery) */
 
 .titulo {
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 2.3rem;
+    font-weight: 200;
     opacity: 0.7;
 }
 
 /* SUBTITULO ( Powered by Technology) */
 
 .subtitulo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    opacity: 0.9;
+    font-size: 2.3rem;
+    font-weight: 600;
+    opacity: 0.8;
     margin-bottom: 1rem;
 }
 
 /* DESCRIÇÃO HEADER / CABEÇALHO */
 
-p.descricao-header {
+.descricao-header {
     font-size: 1rem;
     font-weight: 400;
-    opacity: 0.8;
+    opacity: 0.7;
+    margin-bottom: 2rem;
 }
 
 /* MAIN / CONTAINER */
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
 
     justify-content: center;
     align-items: center;
     gap: 25px;  
-
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 1100px;
 }
 
 /* BORDER COLORS CARDS */
@@ -116,8 +122,25 @@ p.descricao-header {
     
     padding: 1.5rem;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.411);
+    border-radius: 6px;
     width: 100%;
     
+}
+
+/* TITULO DOS CARDS */
+
+.titulo-cards {
+    font-size: 1.3rem;
+    opacity: 0.8;
+    margin-bottom: 0.3rem;
+}
+
+/* DESCRIÇÃO DOS CARDS */
+
+.descricao-cards {
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.5;
 }
 
 /* SECTION / GROUP CARDS */
@@ -128,7 +151,7 @@ p.descricao-header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+     width: 100%;
 }
 
 /* ICONS IMAGENS */
@@ -138,3 +161,28 @@ p.descricao-header {
     margin-top: 1.5rem;
 }
 
+/* MIDEA QUERY */
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        width: 90%;
+    }
+
+    .titulo,
+    .subtitulo {
+        font-size: 1.7rem;
+    }
+
+    .descricao-header {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        width: 90%;
+    }
+
+}
